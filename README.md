@@ -26,6 +26,9 @@ RandomCoords is a short and sweet Python project that generates a uniform pseudo
             - num_points_range defines the range of points per path. Higher numbers for larger paths, lower numbers for shorter paths.
             - circle_radius_range defines how small of a fraction you want the circle for the next point to be in.
                 - For example, circle_radius_range=(15, 25) means the next point will be generated in a circle 1/15-1/25 as small as the RandomCoords circle.
+                
+### Sample Output
+- Check out /sample_output for the output you get upon running test.py
 
 ### Todo
 - Let user define a polygonal geofence if they don't want a circle.
