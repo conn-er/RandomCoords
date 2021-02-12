@@ -5,7 +5,7 @@ import random
 class RandomCoords:
 
     # __init__ magic method for creating a RandomCoords object, some variables have defaults and the units variable has type checking.
-    def __init__(self, center: [float, float], diameter: int = 10, units: str = 'km'):
+    def __init__(self, center: [float, float], diameter: int = 10, units: str = 'km') -> None:
 
         valid_units = {'m', 'km', 'ft', 'mi'}
         self.center = center
@@ -16,7 +16,7 @@ class RandomCoords:
             raise ValueError("Units must be one of %r." % valid_units)
 
     # __str__ magic method that may help you understand more about the RandomCoords object you're using.
-    def __str__(self):
+    def __str__(self) -> str:
 
         return f'Center point: {self.center}\nDiameter ({self.units}): {self.diameter}\nUnits: {self.units}'
 
@@ -45,7 +45,7 @@ class RandomCoords:
         return paths_list
 
     # Private method that returns a random coordinate based on the data inside the RandomCoords object.
-    def __generate_coord(self):
+    def __generate_coord(self) -> [float, float]:
 
         if self.units == 'm':
             conversion = 0.001
@@ -105,7 +105,7 @@ class RandomCoords:
         return path
 
     # This is a private method used by __generate_path which finds the distance between two points on the surface of a sphere (i.e. the earth). We use this method to ensure that a given point is still within the circle.
-    def __haversine(self, lat1: float, lon1: float, lat2: float, lon2: float):
+    def __haversine(self, lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
         # Initializing the radius of earth based on units of the RandomCoords object
         if self.units == 'm':
