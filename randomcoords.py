@@ -89,7 +89,7 @@ class RandomCoords:
             circle_lat_position = path[i][1]
             circle_radius = ((self.diameter / 2) * conversion) / random.randint(circle_radius_range[0], circle_radius_range[1])
             next_angle = random.random() * 2 * pi
-            while abs(next_angle - last_angle) > pi:  # This while loop prevents the next angle from being more than 180 degrees away from the last angle, which creates smoother paths.
+            while abs(next_angle - last_angle) > (0.75 * pi):  # This while loop prevents the next angle from being more than 180 degrees away from the last angle, which creates smoother paths.
                 next_angle = random.random() * 2 * pi
             random_decimal = sqrt(random.random())
             point_long_position = ((circle_radius / 115) * random_decimal) * cos(next_angle) + circle_long_position
