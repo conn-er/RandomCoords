@@ -4,7 +4,7 @@ RandomCoords is a short and sweet Python project that generates a uniform pseudo
 ### Dependencies
 - I made this using Python 3.9. You could probably go as old as Python 3.6, but YMMV.
 - Note: The python script test.py uses folium to create maps based on the output.
-    - This script is not essential to the runtime randomcoords, it is just a test script that utilizes randomcoords.
+    - This script is not essential to running randomcoords, it is just a test script that utilizes randomcoords.
 
 ### Installation
 - Currently, you have to download the script locally.
