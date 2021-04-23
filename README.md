@@ -7,7 +7,7 @@ RandomCoords is a short and sweet Python project that generates a uniform pseudo
     - This script is not essential to running randomcoords, it is just a test script that utilizes randomcoords.
 
 ### Installation
-- Currently, you have to download the script locally.
+- Currently, you have to download the script from here.
 - In the future, this will be added to PyPi so I can use it at work. 
     - You could use this too, if you want, I guess. It is unlikely to break.
 
