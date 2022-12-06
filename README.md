@@ -1,5 +1,5 @@
 # RandomCoords
-RandomCoords is a short and sweet Python module that generates a uniform pseudo-random set of points inside of a circle on the surface of a sphere (e.g. the Earth) only using Python's stdlib. Useful for quickly generating test data for mapping solutions.
+RandomCoords is a short and sweet Python module that generates a uniform pseudo-random set of points inside of a circle on the surface of a sphere (e.g. the Earth) using only Python's stdlib. Useful for quickly generating test data for mapping solutions.
 
 ### Usage
 - RandomCoords objects have a few parameters
